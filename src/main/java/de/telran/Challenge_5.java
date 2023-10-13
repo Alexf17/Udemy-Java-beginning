@@ -59,7 +59,7 @@ public class Challenge_5 {
          After the user enters the third item, print “No more memory available.”,
          then print out the contents of the array.*/
 
-     /*   Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         String [] favorite = new String[3];
         for (int i = 0; i < favorite.length; i++){
             System.out.println("Please enter your favorite food");
@@ -70,7 +70,7 @@ public class Challenge_5 {
         System.out.print("Your favorite food is : ");
         for (int i=0; i<favorite.length; i++){
             System.out.print(favorite[i]+", ");
-        }*/
+        }
 
     }
 }
