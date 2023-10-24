@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class Challenge_5 {
     public static void main(String[] args) {
 
-        /**Create an integer array of 10 elements and give each element an arbitrary value.
+        /*Create an integer array of 10 elements and give each element an arbitrary value.
          Print out the entire array using a loop.*/
 
-        /*int[] array = new int[10];
+        /*
+        int[] array = new int[10];
         array[0] = 12;
         array[1] = 11;
         array[2] = 12;
@@ -24,7 +25,7 @@ public class Challenge_5 {
             System.out.println(array[i]);
         }*/
 
-        /** Use a loop to populate an array with integers from 1 to 20.
+        /* Use a loop to populate an array with integers from 1 to 20.
          Use another loop to print the contents of the array (the elements) backwards.*/
 
       /* int [] array = new int[20];
@@ -36,8 +37,10 @@ public class Challenge_5 {
            System.out.println(array[i]);
        }*/
 
-        /** Create an array of five doubles and give each element some value. Calculate the sum of all the elements and
-         print the result. Calculate the mean/average of the all the elements and print that too.*/
+        /* Create an array of five doubles and give each element some value.
+         Calculate the sum of all the elements and
+         print the result.
+         Calculate the mean/average of all the elements and print that too.*/
 
         /*double[] array = new double[5];
         array[0] = 1.1;
@@ -54,8 +57,9 @@ public class Challenge_5 {
         System.out.printf("%.2f \n", result);
         System.out.println("average : " + average);*/
 
-        /**Write a program which asks the user to enter their top five favourite foods and store their answers
-         in a string array. However, create the array so it can only hold a maximum of three strings.
+        /*Write a program which asks the user to enter their top five favourite foods and store their answers
+         in a string array.
+         However, create the array, so it can only hold a maximum of three strings.
          After the user enters the third item, print “No more memory available.”,
          then print out the contents of the array.*/
 
@@ -68,8 +72,8 @@ public class Challenge_5 {
         }
         System.out.println("No more memory available.\n");
         System.out.print("Your favorite food is : ");
-        for (int i=0; i<favorite.length; i++){
-            System.out.print(favorite[i]+", ");
+        for (String s : favorite) {
+            System.out.print(s + ", ");
         }
 
     }

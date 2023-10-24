@@ -38,7 +38,7 @@ public class StringUtil {
 
         for (int i = 0; i < charArray.length; i++) {
             char c = input.charAt(i);
-            /** if (!Character.isLetterOrDigit(c)) OR -> */
+            /* if (!Character.isLetterOrDigit(c)) OR -> */
             if(c > 31 && c < 48) {
                 charToBreake = c;
                 break;
