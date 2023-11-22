@@ -1,79 +1,93 @@
 package de.telran;
 
 import java.util.Scanner;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Challenge_4 {
     public static void main(String[] args) {
+        /**Activate the required method (the description below)*/
+        doExercise1();
+        doExercise2();
+        doExercise3();
+        doExercise4();
 
-        /* Write a program which asks the user for a password. Make the password “*****”.
-         Each time the user enters the password incorrectly, prompt them for a password again.
-         When the user enters the password correctly, print “ACCESS APPROVED.” */
+    }
+    public static void doExercise1(){
 
-        String password = "12345";
-        String input;
-        do {
-            System.out.println("Enter password: ");
-            Scanner scanner = new Scanner(System.in);
-            input = scanner.nextLine();
-        } while (!input.equals(password));
-        {
-        }
-        System.out.println("ACCESS APPROVED");
+          /*Create an integer array of 10 elements and give each element an arbitrary value.
+         Print out the entire array using a loop.*/
 
-        /*Write a program which makes use of a loop to print the following output:
-         0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.*/
+        int[] array = new int[10];
+        array[0] = 12;
+        array[1] = 11;
+        array[2] = 12;
+        array[3] = 22;
+        array[4] = 14;
+        array[5] = 32;
+        array[6] = 21;
+        array[7] = 42;
+        array[8] = 93;
+        array[9] = 18;
 
-        for (int i = 0; i <= 10; i++) {
-            System.out.print(i + ", ");
-        }
-        System.out.println("\b\b.");
-
-        /* How to subtract fractions correctly?*/
-
-        double a = 2.1;
-        double b = 4.5;
-        System.out.println(b - a);
-
-        /* Write a program which prints numbers from 1 to 40.
-         After every third number, print “Quack.”.= */
-        int count = 1;
-        for (int i = 1; i <= 40; i++) {
-            System.out.println(i);
-            if (count == 3) {
-                System.out.println("Quack.");
-                count = 0;
-            }
-            count++;
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
         }
 
-        /* Create a game where the program picks a random number from 1 to 100 and the player has to
-         guess it. Each time the player makes a guess, print “HIGHER” if the guess was too low or
-         “LOWER” if the guess was too high. If the player correctly guesses the number,
-         print “CORRECT”, then end the game.
-         You can use the line of code below which produces a random number from 1 to 100,
-         and stores it in randomNumber.*/
+    }
 
-        int randomNumber = ThreadLocalRandom.current().nextInt(1, 101);
-        System.out.println("You have to guess my number ");
+    public static void doExercise2() {
+         /* Use a loop to populate an array with integers from 1 to 20.
+         Use another loop to print the contents of the array (the elements) backwards.*/
+
+    int [] array = new int[20];
+       int number =1;
+       for (int i = 0; i <array.length; i++) {
+           array[i]=number++;
+       }
+       for (int i = 0; i < array.length; i++) {
+           System.out.println(array[i]);
+       }
+    }
+
+    public static void doExercise3() {
+          /* Create an array of five doubles and give each element some value.
+         Calculate the sum of all the elements and
+         print the result.
+         Calculate the mean/average of all the elements and print that too.*/
+
+        double[] array = new double[5];
+        array[0] = 1.1;
+        array[1] = 1.5;
+        array[2] = 2.5;
+        array[3] = 3.4;
+        array[4] = 1.9;
+
+        double result = 0;
+        for (int i = 0; i < array.length; i++) {
+            result += array[i];
+        }
+        double average = result / array.length;
+        System.out.printf("%.2f \n", result);
+        System.out.println("average : " + average);
+    }
+
+    public static void doExercise4(){
+         /*Write a program which asks the user to enter their top five favourite foods and store their answers
+         in a string array.
+         However, create the array, so it can only hold a maximum of three strings.
+         After the user enters the third item, print “No more memory available.”,
+         then print out the contents of the array.*/
+
         Scanner scanner = new Scanner(System.in);
-        int counter = 0;
-
-        int number;
-        do {
-            System.out.print("Enter number ");
-            number = scanner.nextInt();
-            counter++;
-            System.out.println(number > randomNumber ? "HIGHER " : "LOWER");
-//            if (number > randomNumber) {
-//                System.out.println("HIGHER ");
-//            }
-//            if (number < randomNumber) {
-//                System.out.println("LOWER");
-//            }
-        } while (number != randomNumber);
-
-        System.out.println("CORRECT, random number was " + randomNumber + ", you used " + counter + " attempts!");
-
+        String [] favorite = new String[3];
+        for (int i = 0; i < favorite.length; i++){
+            System.out.println("Please enter your favorite food");
+            String food = scanner.nextLine();
+            favorite[i] = food;
+        }
+        System.out.println("No more memory available.\n");
+        System.out.print("Your favorite food is : ");
+        for (String s : favorite) {
+            System.out.print(s + ", ");
+        }
     }
 }
