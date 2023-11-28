@@ -1,4 +1,4 @@
-package libapp;
+package udemy.LibraryApp.src.main.java.libapp;
 
 public class Book {
     private String isbn;
