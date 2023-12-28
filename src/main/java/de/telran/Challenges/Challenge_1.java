@@ -1,4 +1,4 @@
-package de.telran;
+package de.telran.Challenges;
 
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;

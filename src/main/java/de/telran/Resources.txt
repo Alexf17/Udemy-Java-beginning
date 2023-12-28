@@ -1,0 +1,15 @@
+Further Resources
+This course taught you the fundamentals of Java and takes you through the basics of OOP. But there is plenty more to learn so where do you go from here?
+
+Resources
+First, I recommend you read this web page:
+
+https://www.reddit.com/r/learnprogramming/wiki/faq
+
+It tells you everything you need to know about advancing as a programmer. It contains links to many other resources. For example, this list of free eBooks and tutorials:
+
+https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-langs.md#java
+
+However, to learn anything effectively you have to practise -- by writing your own programs and reading programs written by other people. So here’s a giant list of programming projects for you to tackle:
+
+https://www.reddit.com/r/learnprogramming/comments/2a9ygh/1000_beginner_programming_projects_xpost/?utm_source=BD&utm_medium=Search&utm_name=Bing&utm_content=PSR1
